@@ -55,11 +55,6 @@
     <h1>S</h1>
     <h1>T</h1>
     <h1>U</h1>
-    <h1>V</h1>
-    <h1>W</h1>
-    <h1>X</h1>
-    <h1>Y</h1>
-    <h1>Z</h1>
     <button
       type="button"
       class="btn btn-default btn-block"
@@ -68,6 +63,11 @@
     >
       Open
     </button>
+    <h1>V</h1>
+    <h1>W</h1>
+    <h1>X</h1>
+    <h1>Y</h1>
+    <h1>Z</h1>
   </div>
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
@@ -92,4 +92,17 @@
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    let currentScrollY;
+
+    $('.modal').on('show.bs.modal', function() {
+      currentScrollY = scrollY;
+      $('body').css('top', -currentScrollY);
+    });
+
+    $('.modal').on('hidden.bs.modal', function(e) {
+      $('body').css('top', 'auto');
+      scrollTo(0, currentScrollY);
+    });
+  </script>
 </body>
