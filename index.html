@@ -13,6 +13,7 @@
     body {
       -webkit-user-select: none;
       -webkit-touch-callout: none;
+      background-color: cornflowerblue;
     }
     .modal-open {
       overflow: hidden;
@@ -32,7 +33,7 @@
   </style>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" style="background-color: lightcyan">
     <h1>A</h1>
     <h1>B</h1>
     <h1>C</h1>
@@ -59,15 +60,15 @@
     <h1>X</h1>
     <h1>Y</h1>
     <h1>Z</h1>
+    <button
+      type="button"
+      class="btn btn-default btn-block"
+      data-toggle="modal"
+      data-target="#myModal"
+    >
+      Open
+    </button>
   </div>
-  <button
-    type="button"
-    class="btn btn-default"
-    data-toggle="modal"
-    data-target="#myModal"
-  >
-    Open
-  </button>
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
       <div class="modal-content">
