@@ -19,6 +19,7 @@
       overflow: hidden;
       position: fixed;
       height: 100vh;
+      width: 100vw;
     }
     .modal-dialog {
       height: 97vh;
@@ -44,6 +45,14 @@
     <h1>H</h1>
     <h1>I</h1>
     <h1>J</h1>
+    <button
+      type="button"
+      class="btn btn-default btn-block"
+      data-toggle="modal"
+      data-target="#myModalA"
+    >
+      Open Modal A
+    </button>
     <h1>K</h1>
     <h1>L</h1>
     <h1>M</h1>
@@ -54,29 +63,50 @@
     <h1>R</h1>
     <h1>S</h1>
     <h1>T</h1>
-    <h1>U</h1>
     <button
       type="button"
       class="btn btn-default btn-block"
       data-toggle="modal"
-      data-target="#myModal"
+      data-target="#myModalB"
     >
-      Open
+      Open Modal B
     </button>
+    <h1>U</h1>
     <h1>V</h1>
     <h1>W</h1>
     <h1>X</h1>
     <h1>Y</h1>
     <h1>Z</h1>
   </div>
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="myModalA">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Modal title</h4>
+          <h4 class="modal-title">Modal title A</h4>
         </div>
         <div class="modal-body">
-          <p>Modal body</p>
+          <p>Modal body A</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default btn-block"
+            data-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModalB">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal title B</h4>
+        </div>
+        <div class="modal-body">
+          <p>Modal body B</p>
         </div>
         <div class="modal-footer">
           <button
